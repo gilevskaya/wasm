@@ -1,0 +1,15 @@
+{
+  "name": "wasm",
+  "version": "1.0.0",
+  "description": "Basic wasm examples",
+  "scripts": {
+    "wat:compile": "npx wat2wasm wat/fib.wat",
+    "wat:start": "node wat/fib.js",
+    "wat": "npm run wat:compile && npm run wat:start",
+    "c:compile": "emcc c/add.c -O2 -s WASM=1 -s SIDE_MODULE=1 -o c/add.wasm",
+    "c:start": "node c/add.js",
+    "c": "npm run c:compile && npm run c:start"
+
+  },
+  "license": "MIT"
+}
