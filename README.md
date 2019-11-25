@@ -8,6 +8,8 @@ https://webassembly.org/docs/high-level-goals/
 ## wat: From WA Text format
 http://webassembly.github.io/spec/core/text/index.html
 
+https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format
+
 ```
 npm run wasm
 ```

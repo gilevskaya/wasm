@@ -6,10 +6,10 @@
     "wat:compile": "npx wat2wasm wat/fib.wat",
     "wat:start": "node wat/fib.js",
     "wat": "npm run wat:compile && npm run wat:start",
-    "c:compile": "emcc c/add.c -O2 -s WASM=1 -s SIDE_MODULE=1 -o c/add.wasm",
-    "c:start": "node c/add.js",
-    "c": "npm run c:compile && npm run c:start"
-
+    "c:compile-env": "emcc c/env.c -O2 -s WASM=1 -s SIDE_MODULE=1 -o c/env.wasm",
+    "c:compile-math": "emcc c/math.c -O2 -s WASM=1 -s SIDE_MODULE=1 -o c/math.wasm",
+    "c:start": "node c/examples.js",
+    "c": "npm run c:compile-env && npm run c:compile-math && npm run c:start"
   },
   "license": "MIT"
 }
