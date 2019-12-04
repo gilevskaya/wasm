@@ -1,0 +1,17 @@
+{
+  "name": "game-of-life",
+  "version": "1.0.0",
+  "description": "Game of Life: wat and js",
+  "main": "game-of-life.js",
+  "scripts": {
+    "test": "jest *.wat *.js --watch",
+    "node": "node .",
+    "web": "npx http-server"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.9.0",
+    "wabt": "^1.0.12"
+  }
+}
